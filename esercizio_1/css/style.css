@@ -269,12 +269,3 @@ footer {
   font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .film-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  nav ul {
-    gap: 1rem;
-  }
-}
