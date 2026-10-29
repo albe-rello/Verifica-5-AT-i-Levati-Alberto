@@ -3,52 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Cinema Fantastico </title>
+        <title> Prenotazione </title>
         <link rel="stylesheet" href="css\style.css">
     </head>
     <body>
         <header>
-            <h1>Cinema Fantastico</h1>
-            <h3>Via Stampa 149 - Cinelandia</h3>
-            <h3>Il Cinema dei tuoi sogni è qua</h3>
+            <h1>Prenota il tuo posto ora</h1>
         </header>
         <nav>
             <ul>
-                <a href="index.html">Pagina Principale</a>
+                <a href="index.html">Menu Principale</a>
                 <a href="programmazione.html">Programmazione della settimana</a>
                 <a href="contatti.html">Orari e Contatti </a>
             </ul>
         </nav>
         <main>
-            <h1>Film in Streaming</h1>
-            <section>  
-                <article>
-                    <img source="https://picsum.photos/200" alt="Film 1">
-                    <h3>L'incredibile Scooterman</h3>
-                    <h4>Durata: 3h:20min</h4>
-                    <h4>Questo film tratta di un tuner di scooter che dopo un incidente sblocca un superpotere che lo aiuterà a salvare la città dalle moto elettriche impazzite</h4>
-                </article>
-            </section> 
-            <section>     
-                <article>
-                    <img source="https://picsum.photos/200" alt="Film 2">
-                    <h3>Piccioni la Vendetta</h3>
-                    <h4>Durata: 2h:40min</h4>
-                    <h4>Questo film tratta di un mondo dove i piccioni sono odiati e quindi tutti fanno di tutto per mandarli via ma i piccioni si ribellano e iniziano a distruggere la citta finche non domineranno il mondo</h4>
-                </article>
-            </section> 
-            <section>     
-                <article>
-                    <img source="https://picsum.photos/200" alt="Film 3">
-                    <h3>I quartieri spagnoli napoletani</h3>
-                    <h4>Durata: 4h:40min</h4>
-                    <h4>Questo documentario racconta di come si vive nei quartieri spagnoli a Napoli e racconta storie di ragazzi che rischiano la vita tutti i giorni</h4>
-                </article>
-            </section> 
+            <section>
+
+            <form action="#" method="post">
+           
+            <label for="nome">Nome e Cognome: </label>
+            <input type="text" id="nome" name="nome" required>
+   
+
+  
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+    
+
+ 
+            <label for="data-spettacolo">Data della visione: </label>
+            <input type="date" id="data-visione" name="data_visione" required>
+  
+      
+            <label for="film">Scegli il Film :</label>
+            <input type="select" id="scelta-film" name="scelta-film" required>
+            
+        
+            <label>Tipo di Biglietto:</label>
+            <input type="radio" id="intero" name="tipo_biglietto" value="intero" checked>
+            <label for="intero">Intero</label>
+            
+            <input type="radio" id="ridotto" name="tipo_biglietto" value="ridotto">
+            <label for="ridotto">Ridotto</label>
+       
+     
+            <label for="posti">Numero di Posti (max 10) :</label>
+            <input type="number" id="posti" name="posti" min="1" max="10" value="1" required>
+       
+
+            <button type="submit">Conferma Prenotazione</button>
+
+            </form>
+        </section>
         </main>
     
         <footer>
-            <h3>Tutti i film che vedete sono esclusive di questo cinema non le troveretet da nessun'altra parte</h3>
+            <h3>Tutti i film che vedete sono esclusive di questo cinema non le troverete da nessun'altra parte</h3>
         </footer>
     </body>
 </html>
