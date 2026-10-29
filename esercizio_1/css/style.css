@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #1a1a2e;
+  --primary-color: #1f1f79c7;
   --secondary-color: #e94560;
-  --accent-color: #0f3468;
+  --accent-color: #728197;
   --bg-color: #f4f4f9;
   --text-color: #333333;
   --white: #ffffff;
@@ -10,7 +10,7 @@
   --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -60,12 +60,12 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a[aria-current="page"] {
   background-color: var(--secondary-color);
 }
 
 nav a[aria-current="page"] {
-  background-color: var(--secondary-color);
   border-bottom: 3px solid var(--white);
 }
 
